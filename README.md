@@ -25,6 +25,10 @@ It calculates statistics such as:
 - `washington.csv`: The dataset used (excluded from version control via `.gitignore`) 
 - `.gitignore`: Configuration to exclude `new_york_city.csv`, `chicago.csv`, `washington.csv` and `.github/**`
 
+### Requirements
+- Python 3.x
+- pandas
+
 ### Credits
 - [Udacity Git Course](https://www.udacity.com/)
 - Inspired by [pdsnd_github](https://github.com/udacity/pdsnd_github) project template
