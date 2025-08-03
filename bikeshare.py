@@ -68,7 +68,8 @@ def load_data(city, month, day):
     dataframe['day_of_week'] = dataframe['Start Time'].dt.day_name()
     dataframe['hour'] = dataframe['Start Time'].dt.hour
 
-    if month != 'all':
+    is_filtered_by_month = (month != 'all')
+    if is_filtered_by_month:
         months = ['january', 'february', 'march', 'april', 'may', 'june']
         month = months.index(month) + 1
         dataframe = dataframe[dataframe['month'] == month]
